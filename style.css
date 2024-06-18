@@ -1,0 +1,33 @@
+.head{
+ margin: 0 auto;
+ width: 25%;
+ text-align: center;
+ border: 2px solid black;
+ margin-top: 10%;
+ padding:30px; 
+}
+h2{
+ color: blue;
+}
+.head h5{
+ text-align: justify;
+ justify-content: center;
+}
+.head h5 a{
+text-decoration: none;
+}
+.head h5 a:hover{
+ color: red;
+ transition: 1.5s;
+}
+ .em a{
+text-decoration: none;
+border: 1px solid black;
+padding: 6px;
+background-color: blue;
+color: white;
+}
+.em a:hover{
+ color: red;
+ transition: 1s;
+}
