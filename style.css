@@ -1,11 +1,6 @@
- .head{
- /* margin: 0 auto; */
- width: 25%;
- /* text-align: center; 
- border: 2px solid black;
- margin-top: 5%;
- padding:34px; */
-} 
+ h2{
+  color: blue;
+ }
 h3{
  color: blue;
 }
