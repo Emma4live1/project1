@@ -27,3 +27,7 @@ font-size: 11px;
  color: red;
  transition: 1s;
 }
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align: justify;
+ }
