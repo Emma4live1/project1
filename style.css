@@ -80,3 +80,18 @@ align-items: center;
     position: absolute;
     font-size: 1.3rem;
 }
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+    .clock-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .clock-container {
+        width: 150px;
+        height: 150px;
+    }
+}
