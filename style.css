@@ -1,33 +1,82 @@
- h2{
-  color: blue;
- }
-h3{
- color: blue;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.head h5{
- text-align: justify;
- justify-content: center;
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
-.head h5 a{
-text-decoration: none;
+
+
+
+.clock {
+    width: 500px;
+height: 500px;
+position: relative;
+background-color: lightgray;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
 }
-.head h5 a:hover{
- color: red;
- transition: 1.5s;
+.number{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    inset: 20px;
+    font-size: 40px;
 }
- .em a{
-text-decoration: none;
-border: 1px solid black;
-padding: 6px;
-background-color: blue;
-color: white;
-font-size: 11px;
+.number b{
+    transform: rotate(calc(-30deg * var(--n)));
+    display: inline-block;
 }
-.em a:hover{
- color: red;
- transition: 1s;
+.center-dot{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    box-shadow: 0 0 10px inset;
+
 }
-body{
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
- }
+.hour-hand, .minute-hand, .second-hand {
+    --rotate:0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
+    transform-origin: bottom;
+    
+}
+
+.hour-hand {
+    width: 12px;
+    height: 130px;
+    background-color: black;
+}
+
+.minute-hand {
+    width: 12px;
+    height: 190px;
+    background-color: blue;
+}
+
+.second-hand {
+    width: 6px;
+    height: 210px;
+    background-color: red;
+}
+.name{
+    text-align: center;
+    bottom: 120px;
+    position: absolute;
+    font-size: 1.3rem;
+}
