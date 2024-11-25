@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -82,12 +82,7 @@ align-items: center;
 }
 /* Responsive design */
 
-@media only screen and (max-width: 768px) {
-    .clock-container {
-        width: 200px;
-        height: 200px;
-    }
-}
+
 
 @media only screen and (max-width: 480px) {
     .clock-container {
